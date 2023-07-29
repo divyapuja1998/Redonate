@@ -1,0 +1,23 @@
+uuid: 28042d29-9253-4614-95a1-af79588d51d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pincode
+    - node.type.blood_bank
+id: node.blood_bank.field_pincode
+field_name: field_pincode
+entity_type: node
+bundle: blood_bank
+label: Pincode
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

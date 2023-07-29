@@ -1,0 +1,9 @@
+blood_bank.send_notification:
+  path: '/admin/config/user-interface/send-notification'
+  defaults:
+    _form: '\Drupal\blood_bank\Form\SendNotification'
+    _title: 'Send Notification'
+  requirements:
+    _permission: 'send notification'
+  options:
+    _admin_route: TRUE

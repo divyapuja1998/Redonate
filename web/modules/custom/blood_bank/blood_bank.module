@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * This is the module to Provides customization to the Site..
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\views\ViewExecutable;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+
+/**
+ * Implements hook_form_alter().
+ */
+function blood_bank_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'user_register_form') {
+    unset($form['field_blood_bank']);
+  }
+}
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function blood_bank_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+  // Only for my_view view.
+  if ($view->id() == 'blood_bank_dashboard') {
+    // Load the current user.
+    $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    $blood_bank = $user->get('field_blood_bank')->target_id;
+    //kint($blood_bank);exit;
+    // Traverse through the 'where' part of the query.
+    foreach ($query->where as &$condition_group) {
+      foreach ($condition_group['conditions'] as &$condition) {
+        if ($condition['field'] == 'node__field_associated_blood_bank.field_associated_blood_bank_target_id') {
+          $condition = [
+            'field' => 'node__field_associated_blood_bank.field_associated_blood_bank_target_id',
+            'value' => $blood_bank,
+            'operator' => '=',
+          ];
+        }
+      }
+    }
+  }
+}
+
+/**
+* Implements hook_mail().
+*/
+function blood_bank_mail($key, &$message, $params) {
+ $options = array(
+   'langcode' => $message['langcode'],
+ );
+
+ switch ($key) {
+   case 'send_notification':
+     $message['from'] = \Drupal::config('system.site')->get('mail');
+     $message['subject'] = t('Donate Blood and save life.', $options);
+     $message['body'][] = $params['message'];
+     break;
+ }
+}

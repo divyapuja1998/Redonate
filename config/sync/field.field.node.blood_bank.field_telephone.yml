@@ -1,0 +1,21 @@
+uuid: 4f70d51b-71ad-4968-b8e3-175b41f41a10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telephone
+    - node.type.blood_bank
+  module:
+    - telephone
+id: node.blood_bank.field_telephone
+field_name: field_telephone
+entity_type: node
+bundle: blood_bank
+label: Telephone
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

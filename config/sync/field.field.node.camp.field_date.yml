@@ -1,0 +1,21 @@
+uuid: f8205260-8f11-4096-a3ba-54511c2d5b8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.camp
+  module:
+    - datetime_range
+id: node.camp.field_date
+field_name: field_date
+entity_type: node
+bundle: camp
+label: 'Event Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

@@ -1,0 +1,66 @@
+uuid: 3da5a0ca-6f0e-4022-a622-ccc8a160d253
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.camp.body
+    - field.field.node.camp.field_address
+    - field.field.node.camp.field_associated_blood_bank
+    - field.field.node.camp.field_date
+    - field.field.node.camp.field_location
+    - field.field.node.camp.field_pincode
+    - node.type.camp
+  module:
+    - datetime_range
+    - geofield
+    - text
+    - user
+id: node.camp.teaser
+targetEntityType: node
+bundle: camp
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_associated_blood_bank:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_date:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_location:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_address: true
+  field_pincode: true

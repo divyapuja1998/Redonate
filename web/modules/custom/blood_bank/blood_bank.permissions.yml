@@ -1,0 +1,3 @@
+send notification:
+  title: 'Send Notification permission'
+  description: 'Gives send notification permission to the users.'

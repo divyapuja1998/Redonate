@@ -1,0 +1,29 @@
+uuid: 473fcba6-6570-4f98-8142-65a16e7f0ad4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blood_group
+    - node.type.blood_bank
+    - taxonomy.vocabulary.blood_group
+id: node.blood_bank.field_blood_group
+field_name: field_blood_group
+entity_type: node
+bundle: blood_bank
+label: 'Blood Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      blood_group: blood_group
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

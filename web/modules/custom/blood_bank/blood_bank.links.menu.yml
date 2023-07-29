@@ -1,0 +1,6 @@
+blood_bank.send_notification:
+  title: 'Send Notification to users'
+  route_name: blood_bank.send_notification
+  description: 'Send notification to user for blood requirement.'
+  parent: system.admin_config_ui
+  weight: 50

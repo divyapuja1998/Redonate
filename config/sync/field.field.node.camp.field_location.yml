@@ -1,0 +1,32 @@
+uuid: 29183019-f49d-4dc1-984a-d7d3ee0e914e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.camp
+  module:
+    - geofield
+id: node.camp.field_location
+field_name: field_location
+entity_type: node
+bundle: camp
+label: Location
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'POINT (73.855591 18.523074)'
+    geo_type: Point
+    lat: 18.523074
+    lon: 73.855591
+    left: 73.855591
+    top: 18.523074
+    right: 73.855591
+    bottom: 18.523074
+    geohash: tek92sh08p20
+    latlon: '18.523074,73.855591'
+default_value_callback: ''
+settings: {  }
+field_type: geofield

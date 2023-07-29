@@ -1,0 +1,20 @@
+uuid: b8846fce-9bb3-4a65-bf26-a6208b87bb3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.camp
+  module:
+    - node
+    - system
+id: blood_bank
+label: 'blood bank'
+weight: 4
+is_admin: null
+permissions:
+  - 'administer themes'
+  - 'create camp content'
+  - 'delete any camp content'
+  - 'delete own camp content'
+  - 'edit any camp content'
+  - 'view the administration theme'

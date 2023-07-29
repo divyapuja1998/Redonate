@@ -1,0 +1,21 @@
+roles:
+  anonymous:
+    theme: ''
+    weight: '0'
+    admin_theme: ''
+  authenticated:
+    theme: ''
+    weight: '0'
+    admin_theme: ''
+  content_editor:
+    theme: ''
+    weight: '0'
+    admin_theme: ''
+  administrator:
+    theme: ''
+    weight: '0'
+    admin_theme: ''
+  blood_bank:
+    theme: ''
+    weight: '0'
+    admin_theme: ''

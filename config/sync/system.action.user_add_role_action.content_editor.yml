@@ -1,0 +1,14 @@
+uuid: ff4f4d6a-98f9-41ff-b69e-7212c5f7eb9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.content_editor
+  module:
+    - user
+id: user_add_role_action.content_editor
+label: 'Add the Content editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: content_editor

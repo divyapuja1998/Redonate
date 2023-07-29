@@ -1,0 +1,14 @@
+uuid: ed54664b-23d1-473e-8fef-c114e15b3061
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.blood_bank
+  module:
+    - user
+id: user_add_role_action.blood_bank
+label: 'Add the blood bank role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: blood_bank

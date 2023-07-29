@@ -1,0 +1,19 @@
+uuid: 11d7887e-5a2e-4714-a234-9c63c7070afd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.camp
+id: node.camp.field_address
+field_name: field_address
+entity_type: node
+bundle: camp
+label: Address
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

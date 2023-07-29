@@ -1,0 +1,20 @@
+uuid: 56189cd5-b292-49fa-ad82-a335ed4cb417
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_pincode
+field_name: field_pincode
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

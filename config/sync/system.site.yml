@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: b147fcca-fa1c-4769-97ba-4a698c7eb5c7
+name: Redonate
+mail: divya@gmail.com
+slogan: 'Save lifes'
+page:
+  403: ''
+  404: ''
+  front: /homepage
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

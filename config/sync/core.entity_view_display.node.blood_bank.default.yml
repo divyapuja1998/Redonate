@@ -1,0 +1,63 @@
+uuid: 69f796e4-dbaf-4a54-bac2-243b048dad04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blood_bank.body
+    - field.field.node.blood_bank.field_address
+    - field.field.node.blood_bank.field_blood_group
+    - field.field.node.blood_bank.field_pincode
+    - field.field.node.blood_bank.field_telephone
+    - node.type.blood_bank
+  module:
+    - text
+    - user
+id: node.blood_bank.default
+targetEntityType: node
+bundle: blood_bank
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_address:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_blood_group:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_pincode:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_telephone:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

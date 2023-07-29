@@ -1,0 +1,27 @@
+uuid: 6994e4fc-2728-435b-9a63-86a899cd602b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_mobile
+  module:
+    - mobile_number
+    - user
+id: user.user.field_mobile
+field_name: field_mobile
+entity_type: user
+bundle: user
+label: 'Mobile Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  verify: none
+  countries:
+    IN: IN
+  message: |-
+    Your verification code from !site_name:
+    !code
+field_type: mobile_number

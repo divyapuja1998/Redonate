@@ -1,0 +1,34 @@
+login:
+  authenticated:
+    redirect_url: ''
+    allow_destination: false
+    weight: 0
+  content_editor:
+    redirect_url: /blood-bank-dashboard
+    allow_destination: true
+    weight: 0
+  administrator:
+    redirect_url: ''
+    allow_destination: false
+    weight: 0
+  blood_bank:
+    redirect_url: /blood-bank-dashboard
+    allow_destination: true
+    weight: 0
+logout:
+  authenticated:
+    redirect_url: ''
+    allow_destination: false
+    weight: 0
+  content_editor:
+    redirect_url: ''
+    allow_destination: false
+    weight: 0
+  administrator:
+    redirect_url: ''
+    allow_destination: false
+    weight: 0
+  blood_bank:
+    redirect_url: ''
+    allow_destination: false
+    weight: 0

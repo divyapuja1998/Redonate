@@ -1,0 +1,14 @@
+uuid: 77acdb19-3232-4d98-9b60-b29d2438a29c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.blood_bank
+  module:
+    - user
+id: user_remove_role_action.blood_bank
+label: 'Remove the blood bank role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: blood_bank

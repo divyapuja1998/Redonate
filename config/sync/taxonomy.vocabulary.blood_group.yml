@@ -1,0 +1,8 @@
+uuid: c5403088-992e-41ef-a238-df9bd9580e28
+langcode: en
+status: true
+dependencies: {  }
+name: 'Blood Group'
+vid: blood_group
+description: ''
+weight: 0

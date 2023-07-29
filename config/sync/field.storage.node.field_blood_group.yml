@@ -1,0 +1,20 @@
+uuid: 3b98a620-6e18-4bc7-9767-ddc185df11d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_blood_group
+field_name: field_blood_group
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

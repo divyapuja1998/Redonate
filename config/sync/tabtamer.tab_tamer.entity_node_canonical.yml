@@ -1,0 +1,32 @@
+uuid: 62d604bb-96ba-4509-a10d-92e6e8335e3d
+langcode: en
+status: true
+dependencies: {  }
+id: entity_node_canonical
+label: entity.node.canonical
+tabs:
+  -
+    label: 'devel.entities:node.devel_tab'
+    link: Devel
+    weight: 100
+    access: false
+  -
+    label: entity.node.canonical
+    link: View
+    weight: -10
+    access: false
+  -
+    label: entity.node.edit_form
+    link: Edit
+    weight: -10
+    access: false
+  -
+    label: entity.node.delete_form
+    link: Delete
+    weight: 10
+    access: false
+  -
+    label: entity.node.version_history
+    link: Revisions
+    weight: 20
+    access: false

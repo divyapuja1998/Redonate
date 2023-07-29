@@ -1,0 +1,29 @@
+uuid: afbfc8c6-1e3d-427b-bec0-ffefe316cc06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_associated_blood_bank
+    - node.type.blood_bank
+    - node.type.camp
+id: node.camp.field_associated_blood_bank
+field_name: field_associated_blood_bank
+entity_type: node
+bundle: camp
+label: 'Associated Blood Bank'
+description: 'Please choose your own blood bank'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      blood_bank: blood_bank
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

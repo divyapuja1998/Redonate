@@ -1,0 +1,23 @@
+uuid: d2c9be91-fb81-4ce2-99a8-88492dfdceee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.blood_bank
+  module:
+    - text
+id: node.blood_bank.body
+field_name: body
+entity_type: node
+bundle: blood_bank
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

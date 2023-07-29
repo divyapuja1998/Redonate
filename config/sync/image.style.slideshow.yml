@@ -1,0 +1,14 @@
+uuid: 6aaf903b-962a-4e99-933c-6f288e5c42a8
+langcode: en
+status: true
+dependencies: {  }
+name: slideshow
+label: slideshow
+effects:
+  e36f8ed0-bbad-4a86-9272-dabf3992f6de:
+    uuid: e36f8ed0-bbad-4a86-9272-dabf3992f6de
+    id: image_resize
+    weight: 1
+    data:
+      width: 1000
+      height: 600
