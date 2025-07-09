@@ -2,8 +2,6 @@
 
 **Redonate** is a web-based Blood Bank Management System designed to bridge the gap between blood donors, blood banks, hospitals, and patients. Built using **Drupal** and **MySQL**, this system allows easy blood donation registration, live blood camp tracking, and blood requests management — all in one place.
 
----
-
 ## 🔧 Tech Stack
 
 - **Frontend & Backend**: Drupal
@@ -11,16 +9,12 @@
 - **Web Server**: Apache
 - **Operating System**: Windows 10
 
----
-
 ## 🎯 Project Objectives
 
 - Provide a centralized platform for blood donors, blood banks, and hospitals
 - Maintain records of blood donations, requests, and donor information
 - Enable quick searching of donors based on blood group and location
 - Improve emergency response by reducing time to find eligible donors
-
----
 
 ## 👥 System Users
 
@@ -31,8 +25,6 @@
 3. **Donor/User**
    - Registers, updates profile, donates blood, and views nearby camps
 
----
-
 ## 📦 Key Features
 
 - User & Blood Bank Registration
@@ -42,8 +34,6 @@
 - Donor Search by Location & Blood Group
 - Real-time Blood Request Handling
 
----
-
 ## 🗂️ Modules Included
 
 - Registration & Login
@@ -52,8 +42,6 @@
 - Blood Collection and Issue Logs
 - Live Blood Donation Camps
 - Contact & About Pages
-
----
 
 ## 📸 Screenshots
 
