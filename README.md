@@ -55,24 +55,6 @@
 
 ---
 
-## 📊 ERD & Diagrams
-
-The project includes:
-- Entity-Relationship Diagrams
-- Use Case Diagrams (Admin, Donor, Blood Bank)
-- Sequence Diagrams
-- Activity & Deployment Diagrams
-
----
-
-## 🚀 Future Enhancements
-
-- Donor screening & selection process
-- Payment feature for donors
-- Automatic blood donation certificate generation
-
----
-
 ## 📸 Screenshots
 
 > _(Add project screenshots here — e.g., homepage, login, admin dashboard, donor list, etc.)_  
